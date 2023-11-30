@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://unpkg.com/wolfy87-eventemitter@5.2.9/EventEmitter.js"></script>
+    <script id="sap-ui-bootstrap"
+    src="https://sdk.openui5.org/resources/sap-ui-core.js"
+    data-sap-ui-theme='sap_belize'
+    data-sap-ui-libs='sap.tnt, sap.m, sap.ui.core, sap.ui.layout, sap.ui.table, sap.f'
+    data-sap-ui-compatVersion='edge' data-sap-ui-preload='async' data-sap-ui-logLevel = "error"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./dist/app.js"></script> -->
+    <script>
+          /**
+   * Tell require where to find these modules
+   **/'use strict';
+
+   let cfg={
+      baseUrl: './dist', 
+      paths: { // relative to baseURL:
+      }
+  };
+
+  requirejs.config(cfg); 
+  sap.ui.getCore().attachInit(() => {
+      require(['app'], 
+      (Entry_module) => {
+        // //   let entry = new Entry_module();
+        //   if (typeof Entry_module.getComponent==='function') {
+        //       entry.getComponent().placeAt('fiori');
+        //   }
+      });
+  })
+    </script>
+</head>
+<body id="content" class="sapUiBody">
+    <div id='fiori' style='font-family:gothambook;font-size:2rem;text-align: center; color:black; padding-top: 2rem;'>
+        Please wait while the application loads</div>
+</body>
+</html>

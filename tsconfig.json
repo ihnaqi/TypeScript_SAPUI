@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es6", 
+    "lib": [
+      "dom",
+      "es2020",
+      "esnext.asynciterable" 
+      ], 
+    "moduleResolution": "classic", 
+    "noEmit":false,
+    "esModuleInterop": false, 
+    "outFile":"./public/dist/app.js",
+    "allowSyntheticDefaultImports": true, 
+    "downlevelIteration": true, 
+    "skipLibCheck": true,
+    "module": "amd",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/wolfy87-eventemitter"
+    ],
+  },
+  "include": [
+    "./src",
+    "./node_modules/@ryancavanaugh/wolfy87-eventemitter"
+  ],
+  "exclude": [
+    "./dist"
+  ]
+}
